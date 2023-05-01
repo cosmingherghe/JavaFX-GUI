@@ -6,14 +6,14 @@
 <?import javafx.scene.shape.Circle?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.cosmingherghe.musicsortercleaner.HelloController">
+<AnchorPane id="AncorPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.cosmingherghe.musicsortercleaner.HelloController">
    <children>
       <Button layoutX="204.0" layoutY="33.0" mnemonicParsing="false" text="Button" />
-      <TextField layoutX="36.0" layoutY="33.0" />
-      <Button layoutX="18.0" layoutY="200.0" mnemonicParsing="false" onAction="#left" text="Left" />
-      <Button layoutX="194.0" layoutY="200.0" mnemonicParsing="false" onAction="#right" text="Right" />
-      <Button layoutX="110.0" layoutY="117.0" mnemonicParsing="false" onAction="#up" text="Up" />
-      <Button layoutX="103.0" layoutY="271.0" mnemonicParsing="false" onAction="#down" text="Down" />
+      <TextField layoutX="36.0" layoutY="33.0" stylesheets="@application.css" />
+      <Button fx:id="left" layoutX="18.0" layoutY="200.0" mnemonicParsing="false" onAction="#left" text="Left" />
+      <Button fx:id="right" layoutX="194.0" layoutY="200.0" mnemonicParsing="false" onAction="#right" text="Right" />
+      <Button fx:id="up" layoutX="110.0" layoutY="117.0" mnemonicParsing="false" onAction="#up" text="Up" />
+      <Button fx:id="down" layoutX="103.0" layoutY="271.0" mnemonicParsing="false" onAction="#down" text="Down" />
       <Circle fx:id="myCircle" fill="DODGERBLUE" layoutX="126.0" layoutY="213.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>
